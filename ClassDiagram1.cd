@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="ThaHr30.CboState" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>AAgAAAAAAAEAAAAEAAAAAAAAAAAAAIIAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Connection" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Class1.cs</FileName>
+      <HashCode>gCAAAAKIUAAAAAAAAgCAAAIAAABABCACAYABAAABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.DialUP" Collapsed="true">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>dialup.cs</FileName>
+      <HashCode>AACAABYGAABAAAAAAAAAAAIAAAICAEAAAAAgQAACAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.ImportData" Collapsed="true">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImportData.cs</FileName>
+      <HashCode>ACAAIAAAACAAAAAAAACAAQQCIAAYAAAAEGAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.IniFile" Collapsed="true">
+    <Position X="8.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>IniFile.cs</FileName>
+      <HashCode>AgAAAAAgAAAAAABACAAABACAAQCEAAAAABAAAAGAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.KingPower" Collapsed="true">
+    <Position X="10" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>KingPower.cs</FileName>
+      <HashCode>gAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Main" Collapsed="true">
+    <Position X="3" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Main.cs</FileName>
+      <HashCode>ABAAAAAAACAAAIAAAAiAAAACAAQAAAAgAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Member" Collapsed="true">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Member.cs</FileName>
+      <HashCode>ACCJAQECNAAKQIICECARAAAAACYAASIAgAAgAAAAIkA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.MemberAdd" Collapsed="true">
+    <Position X="6.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemberAdd.cs</FileName>
+      <HashCode>/yAC4EEQASCUgBDQEECEEATDIAQgAEoBACgEQBAAoLU=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.MemberSearch" Collapsed="true">
+    <Position X="8.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemberSearch.cs</FileName>
+      <HashCode>ACAAQgAAACAAERAAAAiAgQACAAAIAACiAFgAAEAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.MemberView" Collapsed="true">
+    <Position X="10" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>MemberView.cs</FileName>
+      <HashCode>ACAAIgAAACAACBAAAAKAAQACIAAEgAEAEAgAAAAAIAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.PrepareData" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>PrepareData.cs</FileName>
+      <HashCode>gAAAAAAAACAAABgAEAGAAQACIAAAQAAACCAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Program" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Program.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.RecData" Collapsed="true">
+    <Position X="6.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>RecData.cs</FileName>
+      <HashCode>gAAAAAAAACAAABAAAACAAAACAAEAAEAAACACAIABAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Report" Collapsed="true">
+    <Position X="8.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Report.cs</FileName>
+      <HashCode>AQAAAQAAgCAAAAAAAACAAAACAAAAAIAAAAAAAAAEAAQ=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.SendData" Collapsed="true">
+    <Position X="3" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>SendData.cs</FileName>
+      <HashCode>AAAAAAQQAiAAADAABQCAAAICAAAAEQAAASAAAEAAIgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.ViewPicture" Collapsed="true">
+    <Position X="6.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ViewPicture.cs</FileName>
+      <HashCode>BAAAAAgAACCAABAAAByAAAACAAAkAAACAAAAAAAgABA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Voucher" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Voucher.cs</FileName>
+      <HashCode>BIEAC1IAgAIA0lQAwNoVgACYgIFgAQCAJHADAQEwUQE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.VoucherAdd" Collapsed="true">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VoucherAdd.cs</FileName>
+      <HashCode>/xACAAEAVDjAmBAAYHCEkAZiAyFAVIgnAKoJVAAAgDE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.VoucherConfirm" Collapsed="true">
+    <Position X="10" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VoucherConfirm.cs</FileName>
+      <HashCode>fwACCEUAACCEABAAIFCEEAZCAAEAkAgFACgJRAACADE=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.VoucherView" Collapsed="true">
+    <Position X="3" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>VoucherView.cs</FileName>
+      <HashCode>CCAIIgQAACAEiBACBACAAQACICEAAAAAACADAgACIgA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Properties.Resources" Collapsed="true">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQBEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ThaHr30.Properties.Settings" Collapsed="true">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

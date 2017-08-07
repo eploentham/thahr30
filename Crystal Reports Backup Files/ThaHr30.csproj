@@ -1,0 +1,674 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D32312E5-02AA-4828-8210-61F252ED9515}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThaHr30</RootNamespace>
+    <AssemblyName>ThaHr30</AssemblyName>
+    <ManifestCertificateThumbprint>993DFBBCA9C46D48B32A5307523480B18A4A86EC</ManifestCertificateThumbprint>
+    <ManifestKeyFile>ThaHr30_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>COOL BLUE49.ico</ApplicationIcon>
+    <StartupObject>ThaHr30.Program</StartupObject>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://www.janepop.com/thaihotels/</InstallUrl>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\Business Objects\3.0\managed\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files\Common Files\Business Objects\3.0\managed\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Excel, Version=4.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PDF, Version=1.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Ink, Version=4.0.3500.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.Spread.Design, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="FarPoint.Win.TextRenderer, Version=4.0.3500.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="Interop.CrystalEnterpriseLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Interop.CrystalEnterpriseLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.CrystalPluginMgrLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Interop.CrystalPluginMgrLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=5.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="policy.4.0.FarPoint.Win, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="policy.4.0.FarPoint.Win.Spread, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph, Version=5.0.8.21916, Culture=neutral, PublicKeyToken=02a83cbd123fcd60, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccInvoice.designer.cs">
+      <DependentUpon>AccInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccMemberYearDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccMemberYearDetail.Designer.cs">
+      <DependentUpon>AccMemberYearDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccRecVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccRecVoucher.Designer.cs">
+      <DependentUpon>AccRecVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccMemberYear.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccMemberYear.Designer.cs">
+      <DependentUpon>AccMemberYear.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccViewVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AccViewVoucher.Designer.cs">
+      <DependentUpon>AccViewVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Address.cs" />
+    <Compile Include="AddressDistrict.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddressDistrict.Designer.cs">
+      <DependentUpon>AddressDistrict.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs">
+    </Compile>
+    <Compile Include="Contact.cs" />
+    <Compile Include="dialup.cs" />
+    <Compile Include="ImportData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ImportData.Designer.cs">
+      <DependentUpon>ImportData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IniFile.cs" />
+    <Compile Include="Initial.cs" />
+    <Compile Include="InitialAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InitialAdd.Designer.cs">
+      <DependentUpon>InitialAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InputBox.cs" />
+    <Compile Include="KingPower.cs" />
+    <Compile Include="KingPowerOpenText.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KingPowerOpenText.Designer.cs">
+      <DependentUpon>KingPowerOpenText.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KingPowerWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KingPowerWeb.Designer.cs">
+      <DependentUpon>KingPowerWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Meeting.cs" />
+    <Compile Include="MeetingSearchContact.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeetingSearchContact.Designer.cs">
+      <DependentUpon>MeetingSearchContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs" />
+    <Compile Include="MemberAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberAdd.designer.cs">
+      <DependentUpon>MemberAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberCopyAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberCopyAddress.Designer.cs">
+      <DependentUpon>MemberCopyAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeetingAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeetingAdd.Designer.cs">
+      <DependentUpon>MeetingAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MeetingView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MeetingView.Designer.cs">
+      <DependentUpon>MeetingView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSearch.Designer.cs">
+      <DependentUpon>MemberSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSendEmail.Designer.cs">
+      <DependentUpon>MemberSendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSendEmailFlash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSendEmailFlash.Designer.cs">
+      <DependentUpon>MemberSendEmailFlash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSendEmailTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSendEmailTO.Designer.cs">
+      <DependentUpon>MemberSendEmailTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberSKK9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberSKK9.Designer.cs">
+      <DependentUpon>MemberSKK9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberView.designer.cs">
+      <DependentUpon>MemberView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KingPowerGenData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KingPowerGenData.Designer.cs">
+      <DependentUpon>KingPowerGenData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AccInvoice.resx">
+      <DependentUpon>AccInvoice.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccMemberYearDetail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AccMemberYearDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccRecVoucher.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AccRecVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccMemberYear.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AccMemberYear.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccViewVoucher.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AccViewVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddressDistrict.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AddressDistrict.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ImportData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ImportData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InitialAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>InitialAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KingPowerOpenText.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KingPowerOpenText.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KingPowerWeb.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KingPowerWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeetingSearchContact.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MeetingSearchContact.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberAdd.resx">
+      <DependentUpon>MemberAdd.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberCopyAddress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberCopyAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeetingAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MeetingAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MeetingView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MeetingView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSendEmail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberSendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSendEmailFlash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberSendEmailFlash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSendEmailTO.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberSendEmailTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberSKK9.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberSKK9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberView.resx">
+      <DependentUpon>MemberView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KingPowerGenData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>KingPowerGenData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RecData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RecData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportCriteria.resx">
+      <DependentUpon>ReportCriteria.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportView.resx">
+      <DependentUpon>ReportView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchAddress.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SearchAddress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendEmail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ServiceIP.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ServiceIP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopSendData.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShopSendData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopAdjust.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShopAdjust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopSendEmail.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShopSendEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShopView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ShopView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberPicture.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MemberPicture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StaffAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StaffConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffLogin.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StaffLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffPrivileges.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StaffPrivileges.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffPassword.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StaffPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StaffView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>StaffView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoucherAdd.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoucherAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoucherConfirm.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoucherConfirm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoucherReturn.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoucherReturn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VoucherView.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VoucherView.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RecData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RecData.Designer.cs">
+      <DependentUpon>RecData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Report.cs" />
+    <Compile Include="ReportCriteria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportCriteria.designer.cs">
+      <DependentUpon>ReportCriteria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportView.designer.cs">
+      <DependentUpon>ReportView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SearchAddress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchAddress.Designer.cs">
+      <DependentUpon>SearchAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendEmail.Designer.cs">
+      <DependentUpon>SendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceIP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ServiceIP.Designer.cs">
+      <DependentUpon>ServiceIP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="ShopAdjust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopAdjust.Designer.cs">
+      <DependentUpon>ShopAdjust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopSendEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopSendEmail.Designer.cs">
+      <DependentUpon>ShopSendEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopView.Designer.cs">
+      <DependentUpon>ShopView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff.cs" />
+    <Compile Include="StaffAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffAdd.Designer.cs">
+      <DependentUpon>StaffAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffConfirm.Designer.cs">
+      <DependentUpon>StaffConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffLogin.Designer.cs">
+      <DependentUpon>StaffLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffPrivileges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffPrivileges.Designer.cs">
+      <DependentUpon>StaffPrivileges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffPassword.Designer.cs">
+      <DependentUpon>StaffPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StaffView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StaffView.Designer.cs">
+      <DependentUpon>StaffView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Voucher.cs" />
+    <Compile Include="VoucherAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoucherAdd.designer.cs">
+      <DependentUpon>VoucherAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShopSendData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShopSendData.Designer.cs">
+      <DependentUpon>ShopSendData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberPicture.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberPicture.Designer.cs">
+      <DependentUpon>MemberPicture.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherConfirm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoucherConfirm.Designer.cs">
+      <DependentUpon>VoucherConfirm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherReturn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoucherReturn.Designer.cs">
+      <DependentUpon>VoucherReturn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VoucherView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VoucherView.Designer.cs">
+      <DependentUpon>VoucherView.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="ThaHr30_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="COOL BLUE49.ico" />
+    <None Include="Resources\icon-print2_resize.gif" />
+    <None Include="Resources\icon-print2.gif" />
+    <None Include="Resources\InfDel.gif" />
+    <None Include="Resources\stop.gif" />
+    <None Include="Resources\deletecontent.png" />
+    <None Include="Resources\savedrafticon.gif" />
+    <None Include="Resources\i.p.cont.individual.gif" />
+    <None Include="Resources\exit1.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\ac0036-16.png" />
+    <None Include="Resources\wi0009-16.png" />
+    <None Include="Resources\wi0062-16.png" />
+    <None Include="Resources\wi0096-16.png" />
+    <None Include="Resources\wi0054-16.png" />
+    <None Include="Resources\ei0021-161.png" />
+    <None Include="Resources\wi0064-161.png" />
+    <None Include="Resources\wi0064-16.png" />
+    <None Include="Resources\signon.gif" />
+    <None Include="Resources\ei0021-16.png" />
+    <None Include="Resources\print-check-icon.gif" />
+    <None Include="Resources\binocular-icon.gif" />
+    <None Include="Resources\wi0009-48.gif" />
+    <None Include="Resources\cancelicon.gif" />
+    <None Include="Resources\blogicon.gif" />
+    <None Include="Resources\wi0062-48.gif" />
+    <None Include="Resources\assets-icon.jpg" />
+    <None Include="Resources\log_keys.gif" />
+    <None Include="Resources\arrow-back1.gif" />
+    <None Include="Resources\agree.gif" />
+    <None Include="Resources\disagree.gif" />
+    <None Include="Resources\usercard.gif" />
+    <None Include="Resources\arrow-back.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
