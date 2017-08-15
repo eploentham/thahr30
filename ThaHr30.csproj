@@ -1,4 +1,4 @@
-﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="15.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -16,6 +16,13 @@
     <IsWebBootstrapper>true</IsWebBootstrapper>
     <ApplicationIcon>COOL BLUE49.ico</ApplicationIcon>
     <StartupObject>ThaHr30.Program</StartupObject>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <TargetFrameworkProfile />
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -28,7 +35,9 @@
     <MapFileExtensions>true</MapFileExtensions>
     <InstallUrl>https://www.janepop.com/thaihotels/</InstallUrl>
     <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -42,6 +51,7 @@
     <DocumentationFile>
     </DocumentationFile>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -51,27 +61,42 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Common Files\Business Objects\3.0\managed\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=11.0.3300.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>C:\Program Files\Common Files\Business Objects\3.0\managed\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\CrystalDecisions.Shared.dll</HintPath>
     </Reference>
-    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.CalcEngine, Version=4.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.Excel, Version=4.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.PDF, Version=1.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.Win, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.Win.Ink, Version=4.0.3500.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.Win.Spread, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
-    <Reference Include="FarPoint.Win.Spread.Design, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.CalcEngine, Version=4.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.CalcEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Excel, Version=4.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PDF, Version=1.0.3515.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.PDF.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.PluginCalendar.WinForms, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.PluginCalendar.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Ink, Version=4.0.3500.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.Win.Ink.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.Win.Spread.dll</HintPath>
+    </Reference>
+    <Reference Include="FarPoint.Win.Spread.Design, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL">
+      <HintPath>bin\Debug\FarPoint.Win.Spread.Design.dll</HintPath>
+    </Reference>
     <Reference Include="FarPoint.Win.TextRenderer, Version=4.0.3500.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
     <Reference Include="Interop.CrystalEnterpriseLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -81,7 +106,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\Interop.CrystalPluginMgrLib.dll</HintPath>
     </Reference>
-    <Reference Include="MySql.Data, Version=5.1.7.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data">
+      <HintPath>bin\Debug\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="policy.4.0.FarPoint.Win, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
     <Reference Include="policy.4.0.FarPoint.Win.Spread, Version=4.0.3510.2008, Culture=neutral, PublicKeyToken=327c3516b1b18457, processorArchitecture=MSIL" />
     <Reference Include="System" />
@@ -349,8 +376,8 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="RecData.resx">
       <SubType>Designer</SubType>
@@ -436,15 +463,15 @@
       <SubType>Designer</SubType>
       <DependentUpon>VoucherView.cs</DependentUpon>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -584,13 +611,17 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="ClassDiagram1.cd" />
-    <None Include="ThaHr30_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
       <Visible>False</Visible>
       <ProductName>.NET Framework 2.0</ProductName>
       <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
